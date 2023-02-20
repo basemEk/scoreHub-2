@@ -549,6 +549,7 @@ padding-bottom: 50px;
   }
   .testimonials-items{
     display: flex;
+    justify-content: center;
   }
   .single-testmonial:nth-child(3) .testmonial-author-details{
     filter:opacity(1);
@@ -556,17 +557,17 @@ padding-bottom: 50px;
 
   .single-testmonial:nth-child(2){
     margin-top: 200px;
-    margin-left: 100px;
+    margin-left:50px;
     }.single-testmonial:nth-child(3){
     margin-top: 40px;
-    margin-left: 150px;
+    margin-left: 80px;
     }.single-testmonial:nth-child(4){
-    margin-left: 200px;
+    margin-left: 30px;
     margin-top: 200px;
     }.single-testmonial:nth-child(5){
     
     }.single-testmonial:nth-child(6){
-    margin-left: 100px;
+    margin-left: 10px;
     margin-top: 200px;
     }
     .last-desc-margin{
@@ -938,14 +939,28 @@ margin:50px 0;
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-
+.img-about-desc img:hover{
+transform: scale(1.1);
+transition: all .5s linear;
+}
+.last-desc-margin img:hover{
+  transform: scale(1.1);
+transition: all .5s linear;
+}
+.card{
+  padding: 100px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: all .5s linear;
+}
 .testimonials .testimonial-item {
   text-align: center;
   color: #fff;
   border-radius: 30px;
 }
 .testimonial-item img{
-  width: 100%;
+  width: 90%;
 }
 .testimonials .testimonial-item .testimonial-img {
   margin: 0 auto;
@@ -1260,8 +1275,8 @@ margin:50px 0;
   width: 40px;
 }
 .testmonial-author-details{
-  width: 100%;
-  border-radius: 30%;
+  width: 200px;
+  border-radius: 0%;
 }
 .testmonial-author-details p{
   font-size: 12px;
@@ -1967,19 +1982,18 @@ z-index: 99;
   
   }
   .testimonial-item{
-    transform: rotateY(10deg);
+  
     margin-top:100px;
   }
   .testimonial-item:hover{
   
-    transform: rotateY(45deg);
+    transform: scale(1.1);
     transition: all .5s linear;
   }
   
   .swiper-slide-active{
     transition: all .5s linear;
-    transform: rotateY(45deg);
-    transform: scale(1.1) !important;
+    transform: scale(1.2);
   }
   .slider-icon .testimonial-item{
     background-color: white;
@@ -2137,3 +2151,15 @@ padding: 10px;
 .fa-heart-div svg{
   font-size: 30px;
 }
+
+.image-video img{
+  width:100%;
+  }
+  .img-about-desc{
+    margin-top:20px;
+  }
+  @media (min-width: 1024px){
+  .single-testmonial:nth-child(5) {
+      margin-left: 32px;
+  }
+  }
