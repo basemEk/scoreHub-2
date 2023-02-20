@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>scorehub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <a href="home.html">
+ <img src="assets/img/score/logo.png">
+</a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="course.html">Courses</a></li>
+          <li><a class="nav-link scrollto" href="founder.html">Our Founder</a></li>
+          <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="bundles.html">Bundles</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="d-flex text-end shopping-cart">
+        <a href="checkout.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      </div>
+      <div class="d-flex shopping-cart">
+        <a  class="btn-user">
+        <i class="fa-solid fa-user"></i>
+      </a>
+      </div>
+
+
+      <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <h4>Login</h4>
+              </div>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                  </div>
+                  <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                </form>
+                
+   
+            </div>
+          </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <div class="signup-section">Not a member yet? <a href="signup.html" class="text-info"> Sign Up</a>.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+      
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/score/landing-banner-2.png);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Let’s learn about new knowledge & abilities.</h2>
+                <p class="animate__animated animate__fadeInUp">Let’s discover new friends & have learning experience with our beautiful teachers!</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/score/landing-banner.png);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Let’s learn about new knowledge & abilities.</h2>
+                <p class="animate__animated animate__fadeInUp">Let’s discover new friends & have learning experience with our beautiful teachers!</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/score/landing-banner-2.png);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Let’s learn about new knowledge & abilities.</h2>
+                <p class="animate__animated animate__fadeInUp">Let’s discover new friends & have learning experience with our beautiful teachers!</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Book Now</a>
+\
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative ">
+<h2 class=" text-white mb-4 mt-5 font-weight-bold"> COURSES CATEGORIES</h2>
+<p class=" text-white">Browse Courses By Category.</p>
+        <div class="testimonials-slider  mt-4 slider-icon swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide mt-5">
+              <div class="testimonial-item testimonial-icons">
+                <img src="assets/img/score/reading.png" class="testimonial-img mt-4" alt="">
+                <h4>ENTREPRENEURSHIP</h4>
+                <p class="mb-5">There are several sections available In different versions, but most of them Have fune</p>
+                <a href="course.html" class="mt-5 mb-4">Read More  <i class="fas fa-caret-right"></i></a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mt-5">
+              <div class="testimonial-item testimonial-icons">
+                <img src="assets/img/score/skills.png" class="testimonial-img mt-4" alt="">
+                <h4>MINDHUB</h4>
+                <p class="mb-5">There are several sections available In different versions, but most of them Have fune</p>
+                <a href="course.html"  class="mt-5 mb-4">Read More  <i class="fas fa-caret-right"></i></a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mt-5">
+              <div class="testimonial-item testimonial-icons">
+                <img src="assets/img/score/arabic.png" class="testimonial-img mt-4" alt="">
+                <h4>ARABIC</h4>
+                <p class="mb-5">There are several sections available In different versions, but most of them Have fune</p>
+                <a href="course.html"  class="mt-5 mb-4">Read More  <i class="fas fa-caret-right"></i></a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mt-5">
+              <div class="testimonial-item testimonial-icons">
+                <img src="assets/img/score/english.png" class="testimonial-img mt-4" alt="">
+                <h4>ENGLISH</h4>
+                <p class="mb-5">There are several sections available In different versions, but most of them Have fune</p>
+                <a href="course.html"  class="mt-5 mb-4">Read More  <i class="fas fa-caret-right"></i></a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mt-5">
+              <div class="testimonial-item testimonial-icons">
+                <img src="assets/img/score/reading.png" class="testimonial-img" alt="">
+                <h4>ENTREPRENEURSHIP</h4>
+                <p class="mb-5">There are several sections available In different versions, but most of them Have fune</p>
+                <a href="course.html"  class="mt-5 mb-4">Read More  <i class="fas fa-caret-right"></i></a>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+      <div class="testimonials-section p-5 d-none d-xl-block">
+<div class="container-fluid">
+  <div class="testi-title-desc p-4">
+  <h2>What our students are saying about us</h2>
+  <p>A few lines about our students and what are saying maybe a thank you for our students…</p>
+  </div>
+  <div class="testimonials-items">
+  <div class="single-testmonial">
+    <div class="testmonial-author-details">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+    <div class="member-image-and-title">
+      <img src="assets/img/score/testlogo.png" alt="">
+    </div>
+  </div>  <div class="single-testmonial">
+    <div class="testmonial-author-details">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+    <div class="member-image-and-title">
+      <img src="assets/img/score/testlogo.png" alt="">
+    </div>
+  </div>  <div class="single-testmonial">
+    <div class="testmonial-author-details">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+    <div class="member-image-and-title">
+      <img src="assets/img/score/testlogo.png" alt="">
+    </div>
+  </div>  <div class="single-testmonial">
+    <div class="testmonial-author-details">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+    <div class="member-image-and-title">
+      <img src="assets/img/score/testlogo.png" alt="">
+    </div>
+  </div><div class="single-testmonial">
+    <div class="testmonial-author-details">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+    <div class="member-image-and-title">
+      <img src="assets/img/score/testlogo.png" alt="">
+    </div>
+  </div><div class="single-testmonial">
+    <div class="testmonial-author-details">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+    <div class="member-image-and-title">
+      <img src="assets/img/score/testlogo.png" alt="">
+    </div>
+  </div>
+  </div>
+
+</div>
+      </div>
+
+      <div class="testimonials-section pb-5 pt-5 d-block d-xl-none">
+
+        <div class="container-fluid">
+          <div class="testi-title-desc p-4">
+          <h2>What our students are saying about us</h2>
+          <p>A few lines about our students and what are saying maybe a thank you for our students…</p>
+          </div>
+          <div class="testimonials-slider  mt-4 slider-icon swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item testi-logo-img">
+              <img class="mb-4" src="assets/img/score/testlogo.png" alt="" width="100">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item testi-logo-img">
+              <img class="mb-4" src="assets/img/score/testlogo.png" alt="" class="img-fluid">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item testi-logo-img">
+              <img class="mb-4" src="assets/img/score/testlogo.png" alt="" class="img-fluid">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item testi-logo-img">
+              <img class="mb-4" src="assets/img/score/testlogo.png" alt="" class="img-fluid">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item testi-logo-img">
+              <img class="mb-4" src="assets/img/score/testlogo.png" alt="" class="img-fluid">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        
+        <div class="swiper-pagination"></div>
+     </div>
+      </div>
+</div>
+
+
+      <div class="section-video pt-5 pb-5">
+        <div class="container">
+          <div class="video-desc">
+            <h2>Learn more about Eduverse</h2>
+            <p>Learning using the latest immersive technologies Metaverse AR/VR, anywhere, anytime.</p>
+          </div>
+          <div class="image-video">
+            <img src="assets/img/score/videohome.png" class="img-fluid">
+            <a href="#" class="icon-video"><i class="fa fa-play"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+          <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials pb-5 pt-5">
+      <div class="container position-relative">
+        <div class="testi-title-desc p-4">
+        <h2>True masters in their fields, ready to teach you</h2>
+        <p>A few lines about our teachers and what are saying maybe a thank you for our teachers…</p>
+</div>
+
+        <div class="testimonials-slider testimonial-last-home  swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/score/image1-slider.png" class="testimonial-img" alt="">
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/score/image1-slider.png" class="testimonial-img" alt="">
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/score/image1-slider.png" class="testimonial-img" alt="">
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/score/image1-slider.png" class="testimonial-img" alt="">
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/score/image1-slider.png" class="testimonial-img" alt="">
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <div class="contact-info p-5">
+      <div class="container">
+        <h2>Let’s get in touch</h2>
+        <p>A few lines about why should people get in touch with scoreHub…</p>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="icon-contact-info d-block">
+<img src="assets/img/score/contact-icon.png">
+<p>Phone numbers here: 12345657890</p>
+</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="icon-contact-info d-block">
+            <img src="assets/img/score/email.png"> 
+            <p>Emails here: email@email.com </p>
+          </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="icon-contact-info d-block">
+            <img src="assets/img/score/location.png">
+            <p>Addresses & locations here: <br> Beirut:…….. 
+            <br> Dubai:…….. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe-section">
+<div class="container">
+  <div class="testi-title-desc p-4">
+  <h2>Subscribe to our newsletter</h2>
+  <p>A few lines about why should people to subscribe to our newsletter</p>
+  <form>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="subscribe d-flex">
+    <input type="text" placeholder="Enter your email" class="form-control">
+    <button type="text" class="btn btn-subscribe">Subscribe</button>
+    </div>
+  </div>
+</div>
+  </form>
+</div>
+</div>
+    </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" >
+    <div class="footer-items">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2">
+    <img src="assets/img/score/logo.png" class="img-fluid">
+    </div>
+    <div class="col-lg-2 col-12">
+      <ul class="social-icons d-flex">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-linkedin"></i></li>
+      </ul>
+    </div>
+    <div class="col-lg-6 col-12">
+<div class="menu-footer">
+<ul class="d-md-flex d-block">
+  <li>About Us</li>
+  <li>Courses</li>
+  <li>Our Founder</li>
+  <li>Blog</li>
+  <li>Contact Us Us</li>
+</ul>
+</div>
+    </div>
+
+    <div class="col-12 col-lg-2">
+      <div class="menu-footer">
+      <ul class="d-flex">
+        <li>Terms</li>
+        <li>Policy</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js" integrity="sha512-36dJpwdEm9DCm3k6J0NZCbjf8iVMEP/uytbvaiOKECYnbCaGODuR4HSj9JFPpUqY98lc2Dpn7LpyPsuadLvTyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+        $(".btn-user").click(function(){
+            $("#myModal").modal('show');
+        });
+        $(".close").click(function(){
+            $("#myModal").modal('hide');
+        });
+
+    });
+</script>
+
+
+<script>
+   $(document).ready(function(){
+   $(".single-testmonial:nth-child(3)").css("filter","opacity(1)");
+
+  $(".testmonial-author-details").hover(function() {
+  $(".single-testmonial:nth-child(3)").css("filter","opacity(0.5)");
+
+});
+$(".single-testmonial:nth-child(3)").hover(function() {
+  $(".single-testmonial:nth-child(3)").css("filter","opacity(1)");
+
+});
+$(".testmonial-author-details").blur(function() {
+  $(".single-testmonial:nth-child(3)").css("filter","opacity(1)");
+
+});
+});
+</script>
+</body>
+
+</html>
