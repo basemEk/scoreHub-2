@@ -192,11 +192,7 @@
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
-autoplay:true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
+
     slidesPerView: '4',
 
     pagination: {
